@@ -1,0 +1,525 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bebas Neue", sans-serif;}
+body {
+    margin: 0;
+    color: #000;
+    background: #fff;
+    background-image: url(Imagenes/1_EoS5KRlKEyaL1rTOQpZl6A.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-weight: normal;
+    font-size: 100%;
+    color: #333;}
+/* --------------------------- PAGINA PRINCIPAL--------------------------- */
+/* barra de navegacion */
+.barra-menu {
+    width: 100%;
+    overflow: hidden;
+    background-color: transparent;
+    }
+.menu {
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: #754cd6;}
+.lista-menu li {
+    display: inline-block;
+
+    width: 25%;
+    border-right: 1px solid #7E7E7E;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 125%;}
+.lista-menu li:last-child {
+    border-right: none;}
+.lista-menu a,
+.btn-menu {
+    display: block;
+    width: 100%;
+    height: 3em;
+    line-height: 3em;}
+.btn-menu {
+    display: none;
+}
+.aln-izquierda {
+    text-align: left;
+}
+.aln-centro {
+    text-align: center;
+}
+.aln-derecha {
+    text-align: right;
+}
+.lista-menu a,
+.btn-menu {
+    text-decoration: none;
+    color: #fff;
+    background-color: #f37d7d;}
+.lista-menu a:hover {
+    background-color: #463bdf;}
+/* Fixed box */
+.fixed-box {
+    position: fixed;
+    top: 15px; 
+    right: 15px; 
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: #fff; 
+    padding: 10px 20px; 
+    border-radius: 8px; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem; 
+    text-align: center;
+    width: auto; }
+.fixed-box a {
+    text-decoration: none;
+    color: #f37d7d; 
+    font-weight: bold;
+    padding: 6px 12px; 
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 8px;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 0.9rem; }
+.fixed-box a:hover {
+    background-color: #f37d7d;
+    color: #fff;}
+/* main section */
+main section {
+    color: #f5e6e6;
+    text-align: center;
+    font-size: 75px;}
+article {
+    color: #f5e6e6;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.5em;}
+ main section video {
+    width: 100%;  
+    max-width: 800px; 
+    height: auto;  
+    border-radius: 15px;  
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);  
+    display: block;  
+    margin: 20px auto; }
+/* Grilla de imagenes */
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 2fr 0fr;
+    grid-auto-rows: 0;
+    gap: 1vh;
+    background-color: transparent;
+    width: 70%;
+    min-height: 50vh; 
+    margin: 0 auto;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 100px;}
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 5px; 
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;}
+.grid-item h2{
+    font-size: 40px;
+    text-align: center;}
+.grid-item img{
+    width: 400px;
+    border-radius: 10px;
+    height: 250px;}
+/* Estilo  para el footer */
+footer {
+    color: #f5e6e6;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 40px 20px;
+    background-color: #2c3e50; 
+    border-top: 2px solid #fff;
+    box-sizing: border-box;}
+footer h2, footer h4 {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #fff;}
+
+/* Estilo para la sección de "metodos de pago" */
+.section-footer-1 {
+    width: 100%;
+    max-width: 350px;
+    background-color: #34495e; 
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;}
+.section-footer-1 h2 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;}    
+.section-footer-1 ul {
+    list-style: none;
+    padding: 0;
+    color: white;}
+.section-footer-1 li {
+    font-size: 1rem;
+    margin-bottom: 12px;
+  transition: color 0.3s ease, transform 0.3s ease;}
+.section-footer-1 li:hover {
+    color: #e67e22;  
+    transform: translateX(10px); }
+
+    /* Estilo para la sección "Seguinos" */
+.section-footer-social {
+    width: 100%;
+    max-width: 450px;
+    background-color: #34495e;  
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;}
+.section-footer-social h4 {
+    font-size: 1.4rem;
+    color: #fff;
+    margin-bottom: 20px;}
+.section-footer-social p {
+    font-size: 1.1rem;
+    color: #ddd;
+    margin-bottom: 20px;
+    line-height: 1.5;}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;}
+.social-icons a {
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;}
+
+.social-icons a:hover {
+    color: #e67e22; }
+.social-icons i {
+    margin-right: 8px; }
+
+/* Estilo para la sección de contacto */
+.section-footer-2 {
+    width: 100%;
+    max-width: 450px;
+    font-size: 1.1rem;
+    background-color: #34495e;  
+    padding: 25px;
+    border-radius: 15px;
+    color: #f5e6e6;  
+    text-align: center; 
+}
+.section-footer-2 h4 {
+    font-size: 1.4rem;
+    color: #fff;  
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* Estilos para el formulario de contacto */
+form label {
+    color: #fff;  
+    font-size: 1.1rem;  }
+    form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;}
+
+form input[type="text"],
+form select,
+form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;  
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #ecf0f1;}
+
+form input[type="submit"] {
+    padding: 12px 20px;
+    background-color: #e67e22;  
+    color: #fff;  
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+form input[type="submit"]:hover {
+    background-color: #f39c12;  
+    color: #fff;
+}
+/*  íconos  */
+.fab {
+    font-size: 1.5rem;
+}
+
+/*  figcaption imagenes */
+figure img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
+}
+figcaption {
+    position: absolute; 
+    bottom: 10px; 
+    left: 10px; 
+    background-color: rgba(0, 0, 0, 0.6); 
+    color: #fff; 
+    padding: 5px 10px; 
+    font-size: 0.9rem; 
+    font-family: 'Arial', sans-serif; 
+    border-radius: 5px; 
+    max-width: 80%; 
+}
+.grid-item {
+    position: relative;
+}
+/* --------------------------- PAGINA DE REGISTRO--------------------------- */
+/* Estilo para el formu de registrate aplicando gradientes */
+input.form-control {
+   
+ border-radius: 8px;
+    padding: 12px;
+    font-size: 1rem;
+    transition: background 0.3s ease, border 0.3s ease;
+  }
+  
+  input.form-control:focus {
+    background: linear-gradient(145deg, #ffffff, #f5f5f5); 
+    border-color: #f37d7d;
+    box-shadow: 0 0 10px rgba(243, 125, 125, 0.5);
+  }
+  button[type="submit"] {
+    background: linear-gradient(145deg, #f37d7d, #f5e6e6);  
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background: linear-gradient(145deg, #f5e6e6, #f37d7d);  
+    color: #f37d7d;
+  }
+  
+  #inputDocumento {
+     color: #333;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    transition: background 0.3s ease, border 0.3s ease;
+  }
+/* --------------------------- PAGINA SOBRE NOSOTROS--------------------------- */
+ /* Acordeon */
+.accordion-button {
+    font-size: 1.4rem; 
+    font-weight: bold;
+    padding: 1.2rem; 
+    background-color: #463bdf;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+.accordion-button:hover {
+    background-color: #3630b5;
+}
+
+.accordion-body {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    padding: 20px; 
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+section {
+    padding: 50px 20px;
+}
+
+
+/* Contenedor de las img con fade up */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;}
+.card {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+    margin-bottom: 40px;
+    background-color: #f9f9f9; }
+
+.card:hover {
+    transform: translateY(-10px);}
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;}
+
+.card h3 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+    color: #463bdf; }
+
+.card p {
+    font-size: 1.2rem;
+    color: #666;
+    padding: 0 20px 20px 20px;}
+
+.container .card:nth-child(odd) {
+    align-self: flex-start;
+}
+
+.container .card:nth-child(even) {
+    align-self: flex-end;
+}
+
+/* Estilos del selector de fecha */
+#fecha-selector {
+    padding: 20px;
+    background-color: #f4f4f4;
+    max-width: 900px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; 
+}
+
+label {
+    font-size: 1.2rem;
+    color: #4a4a4a;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.input-fecha {
+    padding: 12px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.input-fecha:valid {
+    border-color: #28a745;
+    background-color: #e9f8e7;
+}
+
+.input-fecha:focus {
+    border-color: #007bff;
+    background-color: #f0f9ff;
+    outline: none;
+}
+
+
+/* Carousel de boostrap */
+.carousel-item img {
+    width: 100%;          
+    height: 75vh;         
+    object-fit: cover;    
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 20px;         
+    left: 50%;
+    transform: translateX(-50%); 
+    background-color: rgba(0, 0, 0, 0.5);  
+    color: white;         
+    padding: 15px 30px;   
+    border-radius: 8px;   
+    max-width: 90%;       
+    text-align: center;   
+    font-size: 1.5rem;   
+    box-sizing: border-box; 
+    word-wrap: break-word; 
+    overflow: hidden;     
+    white-space: normal;  
+}
+
+.carousel-caption h5 {
+    font-size: 2rem;  
+    font-weight: bold; 
+    margin-bottom: 10px; 
+    word-wrap: break-word; 
+    white-space: normal; 
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;  
+    line-height: 1.5;    
+    word-wrap: break-word; 
+    white-space: normal; 
+    max-height: 100%;    
+    overflow: hidden;   
+      
+}
+.carousel-caption-title {
+    position: absolute;
+    
+    left: 50%;
+    transform: translateX(-50%); 
+    background-color: rgba(0, 0, 0, 0.6);  
+    color: #fff;  
+    padding: 10px 30px;  
+    border-radius: 5px;  
+    max-width: 80%;  
+    text-align: center;  
+    font-size: 2rem;  
+    font-weight: bold; 
+    z-index: 50;  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+  
